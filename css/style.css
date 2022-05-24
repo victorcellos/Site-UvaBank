@@ -153,16 +153,30 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f2f5f7;
+    background: url('../images/processos-gerenciais-1920x1024.jpg') no-repeat center center/cover;
 }
 
 #showcase-container2 {
     width: 65vh;
     margin-top: -20%;
-    margin-left: 40%;
+    margin-left: -40%;
     font-size: 18px;
-    color: #000000;
+    color: #f97f31;
 
+}
+
+#seta {
+    animation: flutuacao 10s ease-in-out infinite;
+    margin-left: 50%;
+    width: 250px;
+}
+@keyframes flutuacao {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-25px);
+    }
 }
 
 
